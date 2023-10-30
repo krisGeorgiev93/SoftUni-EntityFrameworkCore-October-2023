@@ -29,7 +29,7 @@ namespace P03_SalesDatabase.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=DESKTOP-6VUQ1VB\\SQLEXPRESS;Database=SalesDatabase;" +
+                optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=SalesDatabase;" +
                    "Trusted_Connection=true;TrustServerCertificate=true");
             }
             base.OnConfiguring(optionsBuilder);
