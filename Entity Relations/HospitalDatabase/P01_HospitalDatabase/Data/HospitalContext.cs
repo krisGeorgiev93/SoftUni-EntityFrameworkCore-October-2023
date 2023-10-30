@@ -31,7 +31,7 @@ namespace P01_HospitalDatabase.Data
         { //Configure the  server
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=DESKTOP-6VUQ1VB\\SQLEXPRESS;Database=HospitalDatabase;" +
+                optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=HospitalDatabase;" +
                     "Trusted_Connection=true;TrustServerCertificate=true");
             }
             base.OnConfiguring(optionsBuilder);
